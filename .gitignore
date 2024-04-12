@@ -1,4 +1,8 @@
 # Jupyter Notebook
 *.ipynb_checkpoints
 
+# Virtual environment
 venv*
+
+# arXiv/msg.txt
+arXiv/msg.txt
