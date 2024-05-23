@@ -26,7 +26,8 @@ max_time = source_time + timedelta(seconds=np.ceil(max_delta))
 med_time = source_time + timedelta(seconds=np.ceil(med_delta))
 
 
-min_x = np.min(laz['X'])
+min_x = np.min(laz['X']):wq
+
 max_x = np.max(laz['X'])
 med_x = np.median(laz['X'])
 
@@ -37,4 +38,5 @@ med_y = np.median(laz['Y'])
 
 df.loc[0, ["laz_file", "point_count", "min_time", "max_time", "med_time",  "med_x", "med_y", "min_x", "min_y", "max_x", "max_y"]] = [laz_file, pc, min_time, max_time, med_time, med_x, med_y, min_x, min_y, max_x, max_y]
 
+os.makedirs(os.path.join(root, "csv_data"), exist_ok=True)
 df.to_csv(os.path.join(root, "csv_data", laz_file + ".csv"))
