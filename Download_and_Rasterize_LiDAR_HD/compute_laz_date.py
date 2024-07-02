@@ -26,7 +26,7 @@ max_time = source_time + timedelta(seconds=np.ceil(max_delta))
 med_time = source_time + timedelta(seconds=np.ceil(med_delta))
 
 
-min_x = np.min(laz['X']):wq
+min_x = np.min(laz['X'])
 
 max_x = np.max(laz['X'])
 med_x = np.median(laz['X'])
