@@ -21,8 +21,10 @@ source /path/to/my/venv/bin/activate
 
 link=`sed -n ${SLURM_ARRAY_TASK_ID}p ${links_file}`
 
+current_dir=`pwd`
 cd ${out_folder} 
 wget $link
+cd ${current_dir}
 
 file_name=${link##*/}  # String operator: "##" is a greedy front trim, "*" matches anything, "/" until this last character appears
 python compute_laz_date.py ${out_folder} ${file_name}
