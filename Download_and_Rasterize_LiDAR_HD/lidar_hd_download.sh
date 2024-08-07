@@ -27,4 +27,4 @@ wget $link
 cd ${current_dir}
 
 file_name=${link##*/}  # String operator: "##" is a greedy front trim, "*" matches anything, "/" until this last character appears
-python compute_laz_date.py ${out_folder} ${file_name}
+python /path/to/compute_laz_date.py ${out_folder} ${file_name}
