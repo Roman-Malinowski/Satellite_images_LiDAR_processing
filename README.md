@@ -1,7 +1,7 @@
 # Miscellaneous
 
 Repo for versioning various utility code. 
-
+This repo is mainly used for the tutorial here : https://confluence.cnes.fr/pages/viewpage.action?pageId=469637529
 ## arXiv
 This notebook is used to extract relevant arXiv article from their daily mail, based on a selection of keywords.
 
