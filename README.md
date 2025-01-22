@@ -1,4 +1,4 @@
-# Miscellaneous
+# README
 
 Repo for versioning various utility code. 
 This repo is mainly used for the tutorial here : https://confluence.cnes.fr/pages/viewpage.action?pageId=469637529
